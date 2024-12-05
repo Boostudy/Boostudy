@@ -1,0 +1,70 @@
+.problem-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.6;
+  }
+  
+  .problem-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #282731;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .problem-title::selection {
+    background-color: #75b6fb;
+    color: #000;
+  }
+  .problem-section {
+    margin-bottom: 30px;
+  }
+  
+  .problem-heading {
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  .problem-description {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 10px;
+  }
+  
+  .example-output {
+    font-size: 1rem;
+    color: #333333;
+    background-color: #ffffff;
+    padding: 10px;
+    border-left: 4px solid #6c63ff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    white-space: pre-line;
+  }
+  
+  .code-editor {
+    background-color: #272822;
+    color: #f8f8f2;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  pre {
+    margin: 0;
+  }
+  
+  .divider {
+    border: 0;
+    height: 1px;
+    background: #dddddd;
+    margin: 20px 0;
+  }
+  
