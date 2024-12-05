@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Soeun.css';
+import FirstQuestion from './FirstQuestion';
+import SecondQuestion from './SecondQuestion';
 
 const Soeun = () => {
+  const [showFirstQuestion, setShowFirstQuestion] = useState(false);
+  const [showSecondQuestion, setShowSecondQuestion] = useState(false);
+
   return (
     <div className="problem-container">
       <h1 className="problem-title">소은의 문제 페이지</h1>
@@ -45,7 +50,12 @@ export default SoeunFirst;
           </pre>
         </div>
       </div>
-
+      <button style={{cursor: 'pointer'}} onClick={() => setShowFirstQuestion(!showFirstQuestion)}>
+          {showFirstQuestion ? '문제 1 닫기' : '문제 1 답안 보기'}
+        </button>
+        {showFirstQuestion && (
+          <FirstQuestion onClose={() => setShowFirstQuestion(false)} />
+        )}
       <hr className="divider" />
 
       {/* 문제 2 */}
@@ -86,6 +96,12 @@ export default SoeunSecond;
             `}
           </pre>
         </div>
+        <button style={{cursor: 'pointer'}} onClick={() => setShowSecondQuestion(!showSecondQuestion)}>
+          {showSecondQuestion ? '문제 2 닫기' : '문제 2 답안 보기'}
+        </button>
+        {showSecondQuestion && (
+          <SecondQuestion onClose={() => setShowSecondQuestion(false)} />
+        )}
       </div>
     </div>
   );

@@ -31,21 +31,21 @@
   }
   
   .main-button {
-    margin-top: 30px; /* 이미지와 버튼 사이 간격 */
+    margin-top: 30px; 
     padding: 10px 20px;
     font-size: 1rem;
     font-weight: bold;
     color: #ffffff;
-    background-color: #75b6fb; /* 버튼 배경색 */
+    background-color: #75b6fb; 
     border: none;
-    border-radius: 5px; /* 모서리를 둥글게 */
+    border-radius: 5px; 
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 가벼운 그림자 효과 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
   
   .main-button:hover {
-    background-color: #5a9fe3; /* 호버 시 더 진한 파란색 */
+    background-color: #5a9fe3; 
     transform: scale(1.04);
   }
   
