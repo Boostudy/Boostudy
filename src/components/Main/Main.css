@@ -1,0 +1,54 @@
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh; 
+    background-color: #23232324; 
+    text-align: center;
+  }
+  
+  .main-title {
+    font-size: 2rem; 
+    font-weight: bold;
+    color: #121212;
+    margin-bottom: 20px; 
+  }
+  .main-title::selection {
+    background-color: #75b6fb;
+    color: #000;
+  }
+  
+  .main-image {
+    width: 300px;
+    height: auto; 
+    transition: transform 0.3s ease; 
+  }
+  
+  .main-image:hover {
+    transform: scale(1.05); 
+  }
+  
+  .main-button {
+    margin-top: 30px; /* 이미지와 버튼 사이 간격 */
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #75b6fb; /* 버튼 배경색 */
+    border: none;
+    border-radius: 5px; /* 모서리를 둥글게 */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 가벼운 그림자 효과 */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .main-button:hover {
+    background-color: #5a9fe3; /* 호버 시 더 진한 파란색 */
+    transform: scale(1.04);
+  }
+  
+  .main-button:active {
+    transform: scale(1.0);
+  }
