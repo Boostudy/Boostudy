@@ -1,54 +1,63 @@
+/* 수정된 CSS 코드로 좌우 흰색 여백 제거 */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* 좌우 스크롤 방지 */
+}
 
 .main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    height: 100vh; 
-    background-color: #23232324; 
-    text-align: center;
-  }
-  
-  .main-title {
-    font-size: 2rem; 
-    font-weight: bold;
-    color: #121212;
-    margin-bottom: 20px; 
-  }
-  .main-title::selection {
-    background-color: #75b6fb;
-    color: #000;
-  }
-  
-  .main-image {
-    width: 300px;
-    height: auto; 
-    transition: transform 0.3s ease; 
-  }
-  
-  .main-image:hover {
-    transform: scale(1.05); 
-  }
-  
-  .main-button {
-    margin-top: 30px; 
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #75b6fb; 
-    border: none;
-    border-radius: 5px; 
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .main-button:hover {
-    background-color: #5a9fe3; 
-    transform: scale(1.04);
-  }
-  
-  .main-button:active {
-    transform: scale(1.0);
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #23232324;
+  text-align: center;
+  box-sizing: border-box; /* 여백 계산을 포함하여 정확한 사이즈 유지 */
+}
+
+.main-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #121212;
+  margin-bottom: 20px;
+}
+.main-title::selection {
+  background-color: #75b6fb;
+  color: #000;
+}
+
+.main-image {
+  width: 300px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.main-image:hover {
+  transform: scale(1.05);
+}
+
+.main-button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #75b6fb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.main-button:hover {
+  background-color: #5a9fe3;
+  transform: scale(1.04);
+}
+
+.main-button:active {
+  transform: scale(1.0);
+}
