@@ -1,7 +1,6 @@
 import React from 'react';
 
-const FirstQuestion = ({ onClose }) => {
-
+const FirstQuestion = ({ onClose = () => {} }) => {
   return (
     <div style={overlayStyle}>
       <div style={modalStyle}>
