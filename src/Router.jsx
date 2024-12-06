@@ -8,10 +8,12 @@ import YesungPage from './pages/Yesung';
 import YoonsooPage from './pages/Yoonsoo';
 import EunheePage from './pages/Eunhee';
 import StudyListPage from './components/StudyList/StudyList';
+import StudyList1Page from './pages/List/StudyList1';
 
 // Components
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+
 
 export default function Router() {
   return (
@@ -24,6 +26,7 @@ export default function Router() {
         <Route path="/yoonsoo" element={<YoonsooPage />} />
         <Route path="/eunhee" element={<EunheePage />} />
         <Route path="/studylist" element={<StudyListPage />} />
+        <Route path="/studylist/1" element={<StudyList1Page />} />
       </Routes>
       <Footer />
     </BrowserRouter>
