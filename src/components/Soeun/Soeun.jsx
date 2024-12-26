@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Soeun.css';
 import FirstQuestion from './FirstQuestion';
 import SecondQuestion from './SecondQuestion';
-
+/* */
 const Soeun = () => {
   const [showFirstQuestion, setShowFirstQuestion] = useState(false);
   const [showSecondQuestion, setShowSecondQuestion] = useState(false);
