@@ -40,7 +40,7 @@ const Soeun = () => {
 const SoeunFirst = () => {
   return (
     <>
-      {/* 답안을 여기 작성하세요 */}
+      답안
     </>
   );
 };
