@@ -81,7 +81,7 @@ export default SoeunFirst;
             {`import React from 'react';
 
 const SoeunSecond = () => {
-  const name = ''; // 여기에 이름 작성
+  const name = '소은'; // 여기에 이름 작성
   const favoriteFood = ''; // 여기에 좋아하는 음식 작성
   const today = new Date().toLocaleDateString('ko-KR');
 
