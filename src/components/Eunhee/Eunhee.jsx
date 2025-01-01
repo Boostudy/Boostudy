@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import './Soeun.css';
+import '../Soeun/Soeun.css';
 import FirstQuestion from './FirstQuestion';
 import SecondQuestion from './SecondQuestion';
-/* */
-const Soeun = () => {
+
+const Eunhee = () => {
   const [showFirstQuestion, setShowFirstQuestion] = useState(false);
   const [showSecondQuestion, setShowSecondQuestion] = useState(false);
 
   return (
     <div className="problem-container">
-      <h1 className="problem-title">소은의 문제 페이지</h1>
+      <h1 className="problem-title">은희의 문제 페이지</h1>
       <hr className="divider" />
 
       {/* 문제 1 */}
@@ -26,11 +26,11 @@ const Soeun = () => {
         <p className="example-output">
           <strong>예상 출력:</strong>
           <br />
-          안녕하세요, 저는 소은입니다.
+          안녕하세요, 저는 OOO입니다.
           <br />
-          제가 좋아하는 음식은 연어입니다.
+          제가 좋아하는 음식은 OOO입니다.
           <br />
-          오늘 날짜는 2024-12-05입니다.
+          오늘 날짜는 2024-12-nn입니다.
         </p>
         <div className="code-editor">
           <h3>문제 1 답안 작성:</h3>
@@ -40,7 +40,7 @@ const Soeun = () => {
 const SoeunFirst = () => {
   return (
     <>
-      답안
+      {/* 답안을 여기 작성하세요 */}
     </>
   );
 };
@@ -69,11 +69,11 @@ export default SoeunFirst;
         <p className="example-output">
           <strong>예상 출력:</strong>
           <br />
-          안녕하세요, 저는 소은입니다.
+          안녕하세요, 저는 OOO입니다.
           <br />
-          제가 좋아하는 음식은 연어입니다.
+          제가 좋아하는 음식은 OOO입니다.
           <br />
-          오늘 날짜는 2024. 12. 5.입니다.
+          오늘 날짜는 2024. 12. n.입니다.
         </p>
         <div className="code-editor">
           <h3>문제 2 답안 작성:</h3>
@@ -81,7 +81,7 @@ export default SoeunFirst;
             {`import React from 'react';
 
 const SoeunSecond = () => {
-  const name = '소은'; // 여기에 이름 작성
+  const name = ''; // 여기에 이름 작성
   const favoriteFood = ''; // 여기에 좋아하는 음식 작성
   const today = new Date().toLocaleDateString('ko-KR');
 
@@ -107,4 +107,4 @@ export default SoeunSecond;
   );
 };
 
-export default Soeun;
+export default Eunhee;
